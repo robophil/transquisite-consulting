@@ -45,8 +45,14 @@
                 font-weight: bold;
             }
         } 
-    }
-    
+    } 
+}
 
-    
-} 
+
+ion-navbar {
+    ion-buttons {
+        ion-icon {
+            font-weight: bold;
+        }
+    }
+}
