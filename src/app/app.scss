@@ -16,9 +16,33 @@
 // automatically applied to the <body> element in the app.
 
 .tabs-ios {
-    .tab-button[aria-selected=true] {
+    .tab-button{
+        &[aria-selected=true] {
         .tab-button-icon {
             font-weight: bold
+            }
         }
+
+        &:nth-child(3) {
+            border-radius: 50%;
+            padding: 0px;
+            min-width: 0px;
+            width: 56px;
+            height: 60px;
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+            color: rgba(255, 255, 255, 1);
+            background-color: #75194A;
+            box-sizing: border-box;
+            min-height: 36px;
+            top:-10px;
+
+            ion-icon {
+                color: white;
+                font-weight: bold;
+            }
+        } 
     }
+    
+
+    
 } 
