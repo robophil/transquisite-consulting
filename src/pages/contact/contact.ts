@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { StatusBar } from '@ionic-native/status-bar';
 
 /**
  * Generated class for the ContactPage page.
@@ -14,11 +15,17 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ContactPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    private _statusBar: StatusBar) {
+    this._statusBar.backgroundColorByHexString('#75194A');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ContactPage');
+  ionViewDidLoad() { 
   }
+
+  ionViewWillLeave() {
+    this._statusBar.styleDefault();
+  }
+
 
 }

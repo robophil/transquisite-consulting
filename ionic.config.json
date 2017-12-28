@@ -2,5 +2,7 @@
   "name": "transquisiteConsulting",
   "app_id": "b660a407",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }

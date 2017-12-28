@@ -26,7 +26,7 @@ import { ContactPage } from '../pages/contact/contact';
   ],
   providers: [
     StatusBar,
-    SplashScreen,
+    SplashScreen, 
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
