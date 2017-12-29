@@ -31,4 +31,8 @@ export class ContactPage {
     this._statusBar.styleLightContent();
   }
 
+  ionViewDidLeave(){
+    this._statusBar.styleDefault();
+  }
+
 }
