@@ -1,3 +1,43 @@
 page-contact {
-
+    
+    .scroll-content {
+        background: url(../assets/back.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+      }
+      ion-label {
+        font-size: 0.8em;
+      }
+       ion-img {
+        background: transparent;
+      }
+      .note-ios, .note-md {
+        font-size: 0.8em;
+    }
+      .label-ios, .label-md {
+            margin: 5px 8px 5px 0;
+        }
+      .item-divider-ios {
+          border-bottom: 1px solid #dedede;
+      }
+      .item-input .label-md, .item-select .label-md, .item-datetime .label-md {
+            color: #222;
+      }
+      .item-md {
+            color: #222;
+            background-color: transparent;
+        }
+        .item-input .label-ios, .item-select .label-ios, .item-datetime .label-ios {
+            color: #222;
+        }
+        .item-ios {
+            color: #222;
+            background-color: transparent;
+        }
+        .item-wp {
+            color: #222;
+            background-color: transparent;
+        }
 }

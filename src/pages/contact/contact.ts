@@ -19,16 +19,4 @@ export class ContactPage {
     private _statusBar: StatusBar) { 
   }
 
-  ionViewDidLoad() { 
-  }
-  
-  ionViewWillEnter(){
-    this._statusBar.backgroundColorByHexString('#75194A');
-    this._statusBar.styleLightContent();
-  }
-
-  ionViewDidLeave(){
-    this._statusBar.styleDefault();
-  }
-
 }

@@ -9,15 +9,16 @@ import { ContactPage } from '../pages/contact/contact';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
-  aboutUs:any = HomePage;
-  contact:any = ContactPage;
+  rootPage: any = HomePage;
+  aboutUs: any = HomePage;
+  contact: any = ContactPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      statusBar.styleDefault();
+      statusBar.backgroundColorByHexString('#75194A');
+      statusBar.styleLightContent();
       splashScreen.hide();
     });
   }
