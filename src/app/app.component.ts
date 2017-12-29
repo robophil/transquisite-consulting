@@ -15,8 +15,7 @@ export class MyApp {
   aboutUs: any = HomePage;
   contact: any = ContactPage;
   facebook: any = FacebookPage; 
-
-  current: number;
+ 
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private _utilService: UtilProvider) {
     platform.ready().then(() => {
