@@ -7,12 +7,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from '../pages/contact/contact';
+import { Network } from '@ionic-native/network';
+import { FacebookPage } from '../pages/facebook/facebook';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ContactPage
+    ContactPage,
+    FacebookPage
   ],
   imports: [
     BrowserModule,
@@ -22,11 +25,13 @@ import { ContactPage } from '../pages/contact/contact';
   entryComponents: [
     MyApp,
     HomePage,
-    ContactPage
+    ContactPage,
+    FacebookPage
   ],
   providers: [
     StatusBar,
     SplashScreen, 
+    Network,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
