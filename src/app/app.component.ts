@@ -5,8 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from '../pages/contact/contact';
-import { FacebookPage } from '../pages/facebook/facebook';
-import { SearchPage } from '../pages/search/search';
+import { FacebookPage } from '../pages/facebook/facebook'; 
 import { UtilProvider } from '../providers/util';
 @Component({
   templateUrl: 'app.html'
@@ -15,8 +14,7 @@ export class MyApp {
   rootPage: any = HomePage;
   aboutUs: any = HomePage;
   contact: any = ContactPage;
-  facebook: any = FacebookPage;
-  search: any = SearchPage;
+  facebook: any = FacebookPage; 
 
   current: number;
 
