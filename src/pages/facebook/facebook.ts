@@ -1,5 +1,5 @@
 import { Component, ApplicationRef } from '@angular/core';
-import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
+import { NavController, NavParams, Platform } from 'ionic-angular';
 import { Network } from '@ionic-native/network';
 
 declare var window:any;
@@ -10,7 +10,6 @@ declare var window:any;
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-facebook',
   templateUrl: 'facebook.html',
