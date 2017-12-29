@@ -18,6 +18,7 @@ export class ContactPage {
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private _statusBar: StatusBar) {
     this._statusBar.backgroundColorByHexString('#75194A');
+    this._statusBar.styleLightContent();
   }
 
   ionViewDidLoad() { 
