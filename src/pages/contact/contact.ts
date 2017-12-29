@@ -21,11 +21,7 @@ export class ContactPage {
 
   ionViewDidLoad() { 
   }
-
-  ionViewWillLeave() {
-    this._statusBar.styleDefault();
-  }
-
+  
   ionViewWillEnter(){
     this._statusBar.backgroundColorByHexString('#75194A');
     this._statusBar.styleLightContent();
