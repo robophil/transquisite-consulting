@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
+import { NavController, NavParams } from 'ionic-angular'; 
 
 /**
  * Generated class for the ContactPage page.
@@ -15,8 +14,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 })
 export class ContactPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,
-    private _statusBar: StatusBar) { 
+  constructor(public navCtrl: NavController, public navParams: NavParams) { 
   }
 
 }
