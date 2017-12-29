@@ -9,8 +9,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from '../pages/contact/contact';
 import { Network } from '@ionic-native/network';
-import { FacebookPage } from '../pages/facebook/facebook';
-import { SearchPage } from '../pages/search/search';
+import { FacebookPage } from '../pages/facebook/facebook'; 
 import { UtilProvider } from '../providers/util';
 
 
@@ -19,8 +18,7 @@ import { UtilProvider } from '../providers/util';
     MyApp,
     HomePage,
     ContactPage,
-    FacebookPage,
-    SearchPage
+    FacebookPage
   ],
   imports: [
     BrowserModule,
@@ -31,8 +29,7 @@ import { UtilProvider } from '../providers/util';
     MyApp,
     HomePage,
     ContactPage,
-    FacebookPage,
-    SearchPage
+    FacebookPage
   ],
   providers: [
     StatusBar,

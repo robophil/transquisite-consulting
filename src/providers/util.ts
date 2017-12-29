@@ -20,12 +20,12 @@ export class UtilProvider {
  */
   openInAppBrowser(link: string) {
     let browser = this._iab.create(link, "_blank", "location=yes");
-    browser.on('loadstart').subscribe((event: InAppBrowserEvent) => {
-      console.log("load start event", event);
-    });
-    browser.on('exit').subscribe((event: InAppBrowserEvent) => {
-      console.log("browser closed", event);
-    });
+    // browser.on('loadstart').subscribe((event: InAppBrowserEvent) => {
+    //   console.log("load start event", event);
+    // });
+    // browser.on('exit').subscribe((event: InAppBrowserEvent) => {
+    //   console.log("browser closed", event);
+    // });
 
     browser.show();
   }
