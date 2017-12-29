@@ -16,9 +16,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 export class ContactPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private _statusBar: StatusBar) {
-    this._statusBar.backgroundColorByHexString('#75194A');
-    this._statusBar.styleLightContent();
+    private _statusBar: StatusBar) { 
   }
 
   ionViewDidLoad() { 
@@ -28,5 +26,9 @@ export class ContactPage {
     this._statusBar.styleDefault();
   }
 
+  ionViewWillEnter(){
+    this._statusBar.backgroundColorByHexString('#75194A');
+    this._statusBar.styleLightContent();
+  }
 
 }
