@@ -1,8 +1,8 @@
 <!-- <ion-nav [root]="rootPage"></ion-nav> -->
 <ion-tabs>
-    <ion-tab tabIcon="ios-leaf-outline" [root]="aboutUs"></ion-tab>
-    <ion-tab tabIcon="ios-people-outline" (ionSelect)="register()"></ion-tab>
-    <ion-tab class="me" tabIcon="ios-search-outline" (ionSelect)="jobSearch()"></ion-tab>
-    <ion-tab tabIcon="logo-facebook" [root]="facebook"></ion-tab>
-    <ion-tab tabIcon="ios-call-outline" [root]="contact"></ion-tab>
+    <ion-tab tabIcon="ios-leaf-outline" tabTitle="About" [root]="aboutUs"></ion-tab>
+    <ion-tab tabIcon="ios-people-outline" tabTitle="Register" (ionSelect)="register()"></ion-tab>
+    <ion-tab class="me" tabIcon="ios-search-outline" tabTitle="Job Search" (ionSelect)="jobSearch()"></ion-tab>
+    <ion-tab tabIcon="logo-facebook" tabTitle="Facebook" [root]="facebook"></ion-tab>
+    <ion-tab tabIcon="ios-call-outline" tabTitle="Contact" [root]="contact"></ion-tab>
   </ion-tabs>

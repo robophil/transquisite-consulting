@@ -46,9 +46,10 @@ $colors: (
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-$tabs-ios-tab-min-height: 55px;
+// $tabs-ios-tab-min-height: 55px;
 $tabs-ios-tab-icon-color: #B9B9B9;
 $tabs-ios-tab-icon-color-active: #75194A; 
+$tabs-ios-tab-text-color-active: #75194A; 
 $tabs-ios-border:$hairlines-width solid #DFDFDF;
 $tabs-ios-background: white;
 $toolbar-background: white;
