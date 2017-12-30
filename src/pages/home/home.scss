@@ -1,49 +1,17 @@
 page-home {
+  font-size: 0.8em;
 
   .swiper-pagination-bullet-active {
     background: #75194A;
     opacity: 1;
     }
-    
-    font-size: 0.8em;
 
-    .social {
-         ion-icon {
-            display: inline-block;
-            font-size: 2.1em;
-            margin: 0px 8px 0px 8px;
-         }
-    a {
-      color: #222;
-      text-decoration: none;
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+      bottom: 130px;
     }
 
-    span:nth-child(1) {
-      animation: fadeIn 0.5s ease-in-out both;
+    .slider {
+      height: 70%;
     }
-
-    span:nth-child(2) {
-      animation: fadeIn 0.5s ease-in-out .1s both;
-    }
-
-    span:nth-child(3) {
-     animation: fadeIn 0.5s ease-in-out .2s both;
-    }
-
-    span:nth-child(4) {
-     animation: fadeIn 0.5s ease-in-out .3s both;
-    }
-    span:nth-child(5) {
-      animation: fadeIn 0.5s ease-in-out .4s both;
-     }
-
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-  }
-
-
-
 
 }

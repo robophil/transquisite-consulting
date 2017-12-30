@@ -11,6 +11,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { Network } from '@ionic-native/network';
 import { FacebookPage } from '../pages/facebook/facebook'; 
 import { UtilProvider } from '../providers/util';
+import { ComponentsModule } from '../components/components.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { UtilProvider } from '../providers/util';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ComponentsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
