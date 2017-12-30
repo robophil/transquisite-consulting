@@ -1,61 +1,66 @@
 <ion-header>
-  <ion-navbar color="mine">
+  <!-- <ion-navbar color="mine">
     <ion-title>
       Transquisite
-    </ion-title>
+    </ion-title> 
 
-    <!-- <ion-buttons end>
-      <button ion-button icon-only>
-        <ion-icon name="ios-information-circle-outline"></ion-icon>
-      </button>
-    </ion-buttons> -->
-
-  </ion-navbar>
+  </ion-navbar> -->
 </ion-header>
 
 <ion-content padding>
+  <ion-slides loop="true" autoplay="5000" pager="true">
+    <ion-slide>
+      <h1>Slide 1</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
   <p align="center" padding-top>
-      <img src="assets/imgs/logo3.webp" width="150" height="150">
-  </p> 
+    <img src="assets/imgs/logo3.webp" width="150" height="150">
+  </p>
 
   <p text-justify padding-top>
-      Transquisite operates as a Recruitment, Human Resource and Training Consultancy whose business objective is to empower and
-      develop the talent in Sub-Sahara Africa. By infusing local and international practices, Transquisite Consulting offer bespoke
-      comprehensive services that assist businesses to reach their maximum potential through the development of employees and
-      the brand as a whole. Whilst the business climate is still in financial recovery and the age-old problems of budget and
-      manpower still limit many companies from reaching their full potential, Transquisite Consulting today provide the ultimate
-      solutions...
-      <a>READ MORE</a>
+    Transquisite operates as a Recruitment, Human Resource and Training Consultancy whose business objective is to empower and
+    develop the talent in Sub-Sahara Africa. By infusing local and international practices, Transquisite Consulting offer
+    bespoke comprehensive services that assist businesses to reach their maximum potential through the development of employees
+    and the brand as a whole. Whilst the business climate is still in financial recovery and the age-old problems of budget
+    and manpower still limit many companies from reaching their full potential, Transquisite Consulting today provide the
+    ultimate solutions...
+    <a>READ MORE</a>
   </p>
 
   <div class="social" text-center margin-top padding>
-      <span>
-        <a (click)="openLink('facebook', 'CrusaderSterlingPensions')">
-          <ion-icon name="logo-facebook"></ion-icon>
-        </a>
-      </span>
-      <span>
-        <a (click)="openLink('twitter', 'CSPensions')">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a>
-      </span>
-      <span>
-        <a (click)="openLink('instagram', 'cspensions')">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-      </span>
-      <span>
-        <a (click)="openLink('linkedin', 'crusadersterling-pensions-ltd')">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-      </span>
-      <span>
-        <a (click)="openLink('link', 'k-nM-tqr-HA')">
-          <ion-icon name="link"></ion-icon>
-        </a>
-      </span>
-    </div>
-  
- 
+    <span>
+      <a (click)="openLink('facebook', 'CrusaderSterlingPensions')">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+    </span>
+    <span>
+      <a (click)="openLink('twitter', 'CSPensions')">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+    </span>
+    <span>
+      <a (click)="openLink('instagram', 'cspensions')">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    </span>
+    <span>
+      <a (click)="openLink('linkedin', 'crusadersterling-pensions-ltd')">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+    </span>
+    <span>
+      <a (click)="openLink('link', 'k-nM-tqr-HA')">
+        <ion-icon name="link"></ion-icon>
+      </a>
+    </span>
+  </div>
+
+
 
 </ion-content>
