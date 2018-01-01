@@ -50,7 +50,8 @@
         "UPDATE_METHOD": "background"
       },
       "cordova-plugin-network-information": {},
-      "cordova-plugin-inappbrowser": {}
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-ionic-webview": {}
     }
   }
 }
