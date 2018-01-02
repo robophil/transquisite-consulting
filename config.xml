@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>MyApp</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <name>Transquisite Consulting</name>
+    <description>Transquisite Consulting is a international Recruitment and Training Consultancy with one objective and that is to Identify, Develop, and Empower the talent in Nigeria and Sub-Sahara Africa.</description>
+    <author email="theo4u@ymail.com" href="http://github.com/theo4u">Theophilus Omoregbee</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
