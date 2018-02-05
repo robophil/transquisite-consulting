@@ -17,6 +17,7 @@ declare var window:any;
 export class FacebookPage {
   showFeeds: boolean = true;
   onDevice: boolean;
+  fbLoaded:boolean = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private _ref: ApplicationRef, private _network: Network, private _platform: Platform) {
@@ -45,7 +46,7 @@ export class FacebookPage {
         this._ref.tick();//update ui view
       });
     } else {
-      // for browser testing 
+      // for browser testing
       if (navigator.onLine) {
         this.showFeeds = true;
         this.loadMap();
@@ -64,13 +65,28 @@ export class FacebookPage {
 
     // check if the map script has been loaded or not
     if (typeof window.FB == "undefined") {
+      this.fbLoaded = false;
+
       let script = document.createElement("script");
       script.id = "facebook-jssdk";
-      script.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=357546818042542';
- 
+      script.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=357546818042542'; // 357546818042542';// 357546818042542
+
+      window.fbAsyncInit = ()=>{
+        console.log('facebook just finished loading', JSON.stringify(window.FB));
+        this.initFBFeed();
+      }
+
       document.body.appendChild(script);
-    } 
+    }
+
 
   }
+
+  initFBFeed(){
+    this.fbLoaded = true;
+     console.log('facebook just finished loading');
+     this._ref.tick();//update ui view
+  }
+
 
 }

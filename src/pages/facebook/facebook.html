@@ -15,18 +15,36 @@
 
 <ion-content padding>
 
-  <!-- No internet connection layout here -->
+  <p align="center">
+      <ion-spinner  ></ion-spinner>
+    </p>
+
+
+  <!-- No internet connection layout here
   <div class="no-internet" text-center *ngIf="!showFeeds">
     <ion-icon name="wifi"></ion-icon>
     <p no-margin>Ooh Snap
       <br> No Internet Connection</p>
   </div>
 
-  <div class="fb-page" data-href="https://www.facebook.com/TransquisiteConsulting/" data-tabs="timeline" data-small-header="true"
+
+  <div *ngIf="showFeeds">
+
+    <p align="center" *ngIf="!fbLoaded">
+      <ion-spinner  ></ion-spinner>
+    </p>
+
+  <div *ngIf="fbLoaded" class="fb-page" data-href="https://www.facebook.com/TransquisiteConsulting/" data-tabs="timeline" data-small-header="true"
     data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
     <blockquote cite="https://www.facebook.com/TransquisiteConsulting/" class="fb-xfbml-parse-ignore">
-      <ion-spinner ></ion-spinner>
+      i am in
     </blockquote>
   </div>
+
+  </div>
+
+<!--
+  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTransquisiteConsulting%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=651586701690716" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+-->
 
 </ion-content>

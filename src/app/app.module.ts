@@ -9,9 +9,10 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from '../pages/contact/contact';
 import { Network } from '@ionic-native/network';
-import { FacebookPage } from '../pages/facebook/facebook'; 
+import { FacebookPage } from '../pages/facebook/facebook';
 import { UtilProvider } from '../providers/util';
 import { ComponentsModule } from '../components/components.module';
+import { AppAvailability } from '@ionic-native/app-availability';
 
 
 @NgModule({
@@ -35,9 +36,10 @@ import { ComponentsModule } from '../components/components.module';
   ],
   providers: [
     StatusBar,
-    SplashScreen, 
+    SplashScreen,
     Network,
     InAppBrowser,
+    AppAvailability,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UtilProvider
   ]
