@@ -42,13 +42,14 @@ export class MyApp {
     let ios = {
        ios: 'fb://', android: 'com.facebook.katana', appPath: 'fb://profile/', winPath: 'https://facebook.com/'
     }
+    let pageID = '191866840852258';
     this._appAvailability.check(ios.ios)
       .then(
       (yes) => {
-        window.open(`${ios.appPath + 'TransquisiteConsulting'}`, '_system', 'location=no');
+        window.open(`${ios.appPath + pageID}`, '_system', 'location=no');
       },
       (no) => {
-        window.open(`${ios.winPath + 'TransquisiteConsulting'}`, '_system', 'location=no');
+        window.open(`${ios.winPath + pageID}`, '_system', 'location=no');
       });
   }
 }
